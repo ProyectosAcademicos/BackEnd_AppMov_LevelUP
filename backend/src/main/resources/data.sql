@@ -60,23 +60,23 @@
 -- );
 
 -- Insertar regiones
-INSERT INTO regiones (id, nombre) VALUES
-(1, "Arica y Parinacota"),
-(2, "Tarapacá"),
-(3, "Antofagasta"),
-(4, "Atacama"),
-(5, "Coquimbo"),
-(6, "Valparaíso"),
-(7, "Metropolitana de Santiago"),
-(8, "O’Higgins"),
-(9, "Maule"),
-(10, "Ñuble"),
-(11, "Biobío"),
-(12, "La Araucanía"),
-(13, "Los Ríos"),
-(14, "Los Lagos"),
-(15, "Aysén"),
-(16, "Magallanes y Antártica");
+INSERT INTO regiones (id, nombre) VALUES 
+(1, 'Arica y Parinacota'), 
+(2, 'Tarapacá'), 
+(3, 'Antofagasta'), 
+(4, 'Atacama'), 
+(5, 'Coquimbo'), 
+(6, 'Valparaíso'), 
+(7, 'Metropolitana de Santiago'), 
+(8, 'O’Higgins'), 
+(9, 'Maule'), 
+(10, 'Ñuble'), 
+(11, 'Biobío'), 
+(12, 'La Araucanía'), 
+(13, 'Los Ríos'), 
+(14, 'Los Lagos'), 
+(15, 'Aysén'), 
+(16, 'Magallanes y Antártica');
 
 -- Región 1 — Arica y Parinacota
 INSERT INTO comunas (region_id, nombre) VALUES
