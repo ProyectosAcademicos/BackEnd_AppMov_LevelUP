@@ -21,12 +21,12 @@ import com.levelupstore.backend.service.ProductoService;
 
 @RestController
 @RequestMapping("/api/productos")
-@CrossOrigin(origins = "http://localhost:5173")
+//@CrossOrigin(origins = "*")
 public class ProductoController {
     
     @Autowired
     private ProductoService productoService;
-    
+
     /**
      * GET /api/productos
      * Listar todos los productos activos

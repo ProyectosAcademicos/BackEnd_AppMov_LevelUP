@@ -19,8 +19,12 @@ public class ProductoService {
     private ProductoRepository productoRepository;
     
     public List<ProductoDTO> listarProductos() {
+
+        List<Long> idsPermitidos = List.of(1L, 2L, 3L);
+
         return productoRepository.findByActivoTrue()
             .stream()
+            .filter(producto -> idsPermitidos.contains(producto.getId()))
             .map(this::convertirADTO)
             .collect(Collectors.toList());
     }
@@ -82,6 +86,14 @@ public class ProductoService {
         dto.setStock(producto.getStock());
         dto.setCategoria(producto.getCategoria());
         dto.setActivo(producto.getActivo());
+        
+        if (producto.getImagenFile() != null) {
+        String baseUrl = "http://10.0.2.2:8080/uploads/"; // emulador Android
+        dto.setImagenUrl(baseUrl + producto.getImagenFile());
+        } else {
+            dto.setImagenUrl(null);
+        }
+
         return dto;
     }
 

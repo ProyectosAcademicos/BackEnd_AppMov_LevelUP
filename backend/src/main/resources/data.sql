@@ -477,31 +477,35 @@ INSERT INTO comunas (region_id, nombre) VALUES
 -- DATOS DE PRUEBA - PRODUCTOS
 -- ============================================
 INSERT INTO productos (nombre, descripcion, precio, img_file, stock, categoria) VALUES
-('Silla Secretlab Titan', 'Silla gamer ergonómica de alta calidad', 349990.00, 'Producto2.png', 15, 'silla'),
-('PlayStation 5', 'Consola de última generación', 549990.00, 'Producto1.png', 10, 'consola'),
-('PC Gamer ASUS ROG Strix', 'PC de alto rendimiento para gaming', 1299990.00, 'Producto16.png', 5, 'pc'),
-('Catan', 'Juego de estrategia clásico', 29990.00, 'Producto4.png', 50, 'juegos de mesa'),
-('Carcassonne', 'Juego de construcción medieval', 24990.00, 'Producto5.png', 40, 'juegos de mesa'),
-('Mouse Logitech G502 HERO', 'Mouse gaming de precisión', 49990.00, 'Producto7.png', 30, 'mouse'),
-('Auriculares HyperX Cloud II', 'Auriculares gaming con sonido envolvente', 79990.00, 'Producto8.png', 25, 'accesorios'),
-('Mousepad Razer Goliathus', 'Superficie de control óptima', 29990.00, 'Producto10.png', 60, 'mousepad'),
-('Polera Personalizada Level-Up', 'Polera gamer personalizable', 14990.00, 'Producto11.png', 100, 'poleras'),
-('Controlador Inalámbrico Xbox Series X', 'Control inalámbrico de nueva generación', 59990.00, 'Producto12.png', 20, 'accesorios'),
-('PS5 Death Stranding 2', 'Juego exclusivo de PS5', 69990.00, 'Producto13.png', 30, 'consola'),
-('Xbox Consola Serie S', 'Consola compacta y potente', 269990.00, 'Producto14.png', 12, 'consola'),
-('Nintendo Switch 2', 'Nintendo Switch 2 con Mario Kart', 669990.00, 'Producto15.png', 8, 'consola');
+('PlayStation 5', 'Consola de última generación', 549990, 'Producto1.png', 10, 'consola'),
+('Silla Secretlab Titan', 'Silla gamer ergonómica de alta calidad', 349990, 'Producto2.png', 15, 'silla'),
+('PC Gamer ASUS ROG Strix', 'PC de alto rendimiento para gaming', 1299990, 'Producto3.png', 5, 'pc'),
+('Catan', 'Juego de estrategia clásico', 29990, 'Producto4.png', 50, 'juegos de mesa'),
+('Carcassonne', 'Juego de construcción medieval', 24990, 'Producto5.png', 40, 'juegos de mesa'),
+('Mouse Logitech G502 HERO', 'Mouse gaming de precisión', 49990, 'Producto6.png', 30, 'mouse'),
+('Auriculares HyperX Cloud II', 'Auriculares gaming con sonido envolvente', 79990, 'Producto7.png', 25, 'accesorios'),
+('Mousepad Razer Goliathus', 'Superficie de control óptima', 29990, 'Producto8.png', 60, 'mousepad'),
+('Polera Personalizada Level-Up', 'Polera gamer personalizable', 14990, 'Producto9.png', 100, 'poleras'),
+('Controlador Inalámbrico Xbox Series X', 'Control inalámbrico de nueva generación', 59990, 'Producto10.png', 20, 'accesorios'),
+('PS5 Death Stranding 2', 'Juego exclusivo de PS5', 69990, 'Producto11.png', 30, 'consola'),
+('Xbox Consola Serie S', 'Consola compacta y potente', 269990, 'Producto12.png', 12, 'consola'),
+('Nintendo Switch 2', 'Nintendo Switch 2 con Mario Kart', 669990, 'Producto13.png', 8, 'consola'),
+('Teclado Mecánico Razer BlackWidow', 'Teclado mecánico para gaming', 89990, 'Producto14.png', 18, 'teclado'),
+('Monitor Samsung Odyssey G7', 'Monitor curvo gaming 240Hz', 499990, 'Producto15.png', 7, 'monitor');
 
---Luego de haber realizado los insert se ejecuta este update para que se visualicen las imagenes.
-UPDATE productos SET img_file = 'Producto2.png' WHERE id = 1;
-UPDATE productos SET img_file = 'Producto1.png' WHERE id = 2;
-UPDATE productos SET img_file = 'Producto16.png' WHERE id = 3;
-UPDATE productos SET img_file = 'Producto4.png' WHERE id = 4;
-UPDATE productos SET img_file = 'Producto5.png' WHERE id = 5;
-UPDATE productos SET img_file = 'Producto7.png' WHERE id = 6;
-UPDATE productos SET img_file = 'Producto8.png' WHERE id = 7;
-UPDATE productos SET img_file = 'Producto10.png' WHERE id = 8;
-UPDATE productos SET img_file = 'Producto11.png' WHERE id = 9;
-UPDATE productos SET img_file = 'Producto12.png' WHERE id = 10;
-UPDATE productos SET img_file = 'Producto13.png' WHERE id = 11;
-UPDATE productos SET img_file = 'Producto14.png' WHERE id = 12;
-UPDATE productos SET img_file = 'Producto15.png' WHERE id = 13;
+
+UPDATE productos SET img_file = 'Producto1.png'  WHERE id = 1;
+UPDATE productos SET img_file = 'Producto2.png'  WHERE id = 2;
+UPDATE productos SET img_file = 'Producto3.png'  WHERE id = 3;
+UPDATE productos SET img_file = 'Producto4.png'  WHERE id = 4;
+UPDATE productos SET img_file = 'Producto5.png'  WHERE id = 5;
+UPDATE productos SET img_file = 'Producto6.png'  WHERE id = 6;
+UPDATE productos SET img_file = 'Producto7.png'  WHERE id = 7;
+UPDATE productos SET img_file = 'Producto8.png'  WHERE id = 8;
+UPDATE productos SET img_file = 'Producto9.png'  WHERE id = 9;
+UPDATE productos SET img_file = 'Producto10.png' WHERE id = 10;
+UPDATE productos SET img_file = 'Producto11.png' WHERE id = 11;
+UPDATE productos SET img_file = 'Producto12.png' WHERE id = 12;
+UPDATE productos SET img_file = 'Producto13.png' WHERE id = 13;
+UPDATE productos SET img_file = 'Producto14.png' WHERE id = 14;
+UPDATE productos SET img_file = 'Producto15.png' WHERE id = 15;
